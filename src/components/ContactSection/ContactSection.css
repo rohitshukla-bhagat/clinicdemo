@@ -1,0 +1,142 @@
+.contact-section {
+    background-color: white;
+}
+
+.md-container {
+    max-width: 1280px;
+}
+
+.contact-grid {
+    display: grid;
+    gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.text-slate-900 {
+    color: var(--color-slate-900);
+}
+
+.contact-desc {
+    color: var(--color-slate-500);
+    line-height: 1.625;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact-icon-wrapper {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+    background-color: var(--color-red-50);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-red-600);
+}
+
+.contact-item-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-slate-900);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.25rem;
+}
+
+.contact-item-desc {
+    color: var(--color-slate-600);
+    font-size: 0.875rem;
+}
+
+.contact-action {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-whatsapp {
+    background-color: var(--color-green-500);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+    box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.3), 0 4px 6px -4px rgba(34, 197, 94, 0.3);
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--color-green-600);
+}
+
+.contact-map {
+    height: 400px;
+    min-height: 400px;
+    width: 100%;
+    border-radius: 2.5rem;
+    background-color: var(--color-slate-100);
+    border: 1px solid var(--color-slate-200);
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .contact-map {
+        height: 100%;
+    }
+}
+
+.map-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--color-slate-400);
+}
+
+.map-loading-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.map-iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
