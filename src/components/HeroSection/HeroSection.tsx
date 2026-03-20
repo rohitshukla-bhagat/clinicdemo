@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
                 <div className="hero-image-wrapper">
                     <div className="hero-image-container">
                         <img
-                            src="https://images.unsplash.com/photo-1629909606655-324f01811eaf?auto=format&fit=crop&q=80&w=1000"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfjHX9KdmZ2hmEYAX7OuBluLYL0jMv-IwYn1cpF8Cg8UIwdrwGIDoXDE&s=10"
                             alt="Clinic Interior"
                             className="hero-image"
                         />
